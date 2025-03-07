@@ -1,4 +1,63 @@
-Refresh page it working now<!--DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IPL 2025 Popup</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Arial, sans-serif; overflow: hidden; }
+        .popup-overlay {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0, 0, 0, 0.8); display: flex;
+            align-items: center; justify-content: center;
+        }
+        .popup-content {
+            position: relative; width: 90%; max-width: 600px;
+            background: #fff; border-radius: 10px; overflow: hidden;
+            text-align: center; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+        video { width: 100%; height: auto; }
+        .message {
+            padding: 15px; font-size: 18px; font-weight: bold;
+        }
+        .buttons {
+            display: flex; justify-content: space-around;
+            padding: 10px; background: #f4f4f4;
+        }
+        .buttons button {
+            padding: 10px 15px; border: none; cursor: pointer;
+            font-size: 16px; border-radius: 5px;
+        }
+        .join { background: #28a745; color: white; }
+        .joined { background: #dc3545; color: white; }
+    </style>
+</head>
+<body>
+    <div class="popup-overlay" id="popup">
+        <div class="popup-content">
+            <video id="popupVideo" autoplay loop controls>
+                <source src="2025(MP4).mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="message">IPL 2025 is coming! Join our Telegram to watch it free 🤗</div>
+            <div class="buttons">
+                <button class="join" onclick="joinNow()">Join Now</button>
+                <button class="joined" onclick="closePopup()">Already Joined</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        function joinNow() {
+            window.location.href = '';
+        }
+        function closePopup() {
+            document.getElementById('popup').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
+<!--DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
