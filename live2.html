@@ -5,7 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Enhanced Video Player</title>
     <script src="//content.jwplatform.com/libraries/SAHhwvZq.js"></script>
-    <style>
+    <style>.insta-btn img {
+  width: 20px; /* Very small size */
+  height: 20px;
+  border-radius: 50%; /* Make it round */
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s;
+}
+
+.insta-btn img:hover {
+  transform: scale(1.1);
+}
         /* Modern UI Styling */
         body {
             margin: 0;
@@ -91,7 +104,9 @@
                 }
             }
         });
-    </script>
+    </script><a href="https://instagram.com/nyx.z_" target="_blank" class="insta-btn">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" />
+    </a>
 </body>
 </html>
 <!--DOCTYPE html>
