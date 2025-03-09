@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CT2025 Final #INDvNZ - English Live</title>
+    <script src="//content.jwplatform.com/libraries/SAHhwvZq.js"></script>
+    <style>.insta-btn img {
+  width: 20px; /* Very small size */
+  height: 20px;
+  border-radius: 50%; /* Make it round */
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s;
+}
+
+.insta-btn img:hover {
+  transform: scale(1.1);
+}
+        /* Modern UI Styling */
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #141e30, #243b55);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+            border-radius: 15px;
+            background: rgba(255, 255, 255, 0.1);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .video-container {
+            width: 80vw;
+            max-width: 800px;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-bottom: 20px;
+            box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.2);
+        }
+
+        #jwplayerDiv {
+            width: 100%;
+            height: 100vh;
+         
+        }
+
+        .join-btn {
+            background: #60a5fa;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 12px 25px;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: 0.3s;
+            display: inline-block;
+            box-shadow: 0px 5px 15px rgba(255, 111, 97, 0.4);
+        }
+
+        .join-btn:hover {
+            background: #3b82f6;
+            box-shadow: 0px 5px 20px #60a5fa;
+        }
+    </style>
+</head>
+<body>
+            <div id="jwplayerDiv"></div> 
+    <script>
+        // JW Player Setup
+        jwplayer("jwplayerDiv").setup({
+            file: "https://a170aivottlinear-a.akamaihd.net/OTTB/sin-nitro/live/clients/dash/enc/tsrm0zirxz/out/v1/190f1d69a3d5467f8fb7d9df4339bc49/cenc.mpd", 
+            autostart: true,
+            width: "100%",
+            height: "100%",
+            stretching: "uniform",
+            type: "dash",
+            drm: {
+                clearkey: {
+                    keyId: "9cb6b6283487afe392adcffebf3cd6be",
+                    key: "05f4eb67381e0c173954603518ce84c3"
+                }
+            }
+        });
+    </script>
+</body>
+</html>
+<!--DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic URL to Iframe</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+        #urlFormContainer {
+            padding: 10px;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        #contentFrame {
+            width: 100%;
+            height: calc(85vw * 7 / 10); /* 16:8 aspect ratio */
+            border: none;
+        }
+        /* Popup styling */
+        #popupMessage {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 20px;
+            background-color: #f8f8f8;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            border-radius: 8px;
+            z-index: 1000;
+        }
+        #popupMessage button {
+            background-color: #0088cc;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        #popupMessage .cancel-button {
+            background-color: #ccc;
+            color: black;
+        }
+
+        /* Button Styling from Previous Code */
+        .button-54 {
+            font-family: "Open Sans", sans-serif;
+            font-size: 16px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #fff;
+            background: linear-gradient(45deg, #ff0047, #6a00ff);
+            border: none;
+            padding: 10px 20px;
+            border-radius: 30px;
+            cursor: pointer;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease-in-out;
+        }
+        .button-54:hover {
+            background: linear-gradient(45deg, #ff7a7a, #8c7aff);
+            transform: scale(1.1);
+            box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+        }
+        a {
+            text-decoration: none;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <iframe id="contentFrame" sandbox="allow-forms allow-pointer-lock allow-same-origin allow-scripts allow-top-navigation" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen="true" scrolling="no" 
+        src="https://momixtvmpdplayer.pages.dev/?play=https://otte.live.cf.ww.aiv-cdn.net/pdx-nitro/live/clients/dash/enc/tsrm0zirxz/out/v1/190f1d69a3d5467f8fb7d9df4339bc49/cenc.mpd&kid=9cb6b6283487afe392adcffebf3cd6be&key=05f4eb67381e0c173954603518ce84c3">
+    </iframe>
+
+    <p style="text-align:center; font-family: Arial, sans-serif; font-size: 16px; color: #555; margin-top: 20px;">
+        Please be patient, the video might take some time to load 🔍.
+    </p>
+
+    <div style="text-align: center; margin-top: 20px;">
+        <button class="button-54" role="button">
+            <a href="https://t.me/+bdfr3H7NBwwl" target="_blank">Join Telegram</a>
+        </button>
+    </div>
+</body>
+</html>
