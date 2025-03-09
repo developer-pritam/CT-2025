@@ -112,10 +112,15 @@
       document.getElementById("contentContainer").innerHTML = '<iframe id="contentFrame" sandbox="allow-forms allow-pointer-lock allow-same-origin allow-scripts allow-top-navigation" allowfullscreen="true" scrolling="no" src="https://stream.cricktv.site/ss1hi"></iframe>';
     }
   </script>
+  <script>
+        function openLivePage() {
+            window.location.href = 'live2.html';
+        }
+  </script>
 
   <div class="btn-container">
     <button class="btn" onclick="changeVideo('https://liv-cdn.pstvlive.xyz/wpl/hin/master.m3u8?id=hin')">Hindi</button>
-    <button class="btn" onclick="changeVideo('https://liv-cdn.pstvlive.xyz/wpl/eng/master.m3u8?id=eng')">english</button>
+    <button class="joined" onclick="openLivePage()">PRIME ENGLISH PC</button>
     <button class="btn" onclick="changeVideo('https://jcevents.akamaized.net/bpk-tv/JC_Sports18_1HD/JCHLS/hdntl=exp=1741585633~acl=%2f*~id=97ff5c734c6f4a3ea96b01cfd44846cc~data=hdntl~hmac=db0dbae6b8d53b386b4bc9848af7139235c4f2c36e1bc9ee44971a36249f2c20/index.m3u8')">ios/pc</button>
     <button class="btn" onclick="loadIframe()">star sport hindi</button>
   </div>
