@@ -1,6 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <title>Nishkarsh</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="//content.jwplatform.com/libraries/SAHhwvZq.js"></script>
+  <script disable-devtool-auto src="https://cdn.jsdelivr.net/npm/disable-devtool"></script>
+  <a href="https://www.freecounterstat.com" title="website counter">
+    <img src="https://counter6.optistats.ovh/private/freecounterstat.php?c=kyp3jnx1qam3tx636zypzy9ttutfdtfs" border="0" title="website counter" alt="website counter">
+  </a>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: Arial, sans-serif; }
+    .popup-overlay {
+        position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+        background: rgba(0, 0, 0, 0.8); display: flex;
+        align-items: center; justify-content: center;
+    }
+    .popup-content {
+        position: relative; width: 90%; max-width: 600px;
+        background: #fff; border-radius: 10px; overflow: hidden;
+        text-align: center; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    }
+    .gif-container img { width: 100%; height: auto; }
+    .message {
+        padding: 15px; font-size: 18px; font-weight: bold;
+    }
+    .buttons {
+        display: flex; justify-content: space-around;
+        padding: 10px; background: #f4f4f4;
+    }
+    .buttons button {
+        padding: 10px 15px; border: none; cursor: pointer;
+        font-size: 16px; border-radius: 5px;
+    }
+    .join { background: #28a745; color: white; }
+    .joined { background: #dc3545; color: white; }
+  </style>
+</head>
+<body>
+  <div class="popup-overlay" id="popup">
+    <div class="popup-content">
+        <div class="gif-container">
+            <img src="ezgif-654ec56a3db3d8.gif" alt="IPL 2025 GIF">
+        </div>
+        <div class="message">IPL 2025 is coming! Join our Telegram to watch it free 🤗</div>
+        <div class="buttons">
+            <a href="https://t.me/+nJCypsY4VzlkZjdl" target="_blank">
+                <button class="join">Join Now</button>
+            </a>
+            <button class="joined" onclick="closePopup()">Already Joined</button>
+        </div>
+    </div>
+  </div>
+
+  <div id="jwplayerDiv"></div>
+
+  <script>
+    // Set up the JWPlayer with a default channel
+    jwplayer("jwplayerDiv").setup({
+      file: "https://liv-cdn.pstvlive.xyz/wpl/eng/master.m3u8?id=eng",
+      autostart: true,
+      controls: true,
+      width: "100%",
+      aspectratio: "16:9"
+    });
+
+    // Function to change the video when a button is clicked
+    function changeVideo(url) {
+      jwplayer("jwplayerDiv").load({
+        file: url
+      });
+      jwplayer("jwplayerDiv").play();
+    }
+
+    function closePopup() {
+        document.getElementById('popup').style.display = 'none';
+    }
+  </script>
+
+  <div class="btn-container">
+    <button class="btn" onclick="changeVideo('https://liv-cdn.pstvlive.xyz/wpl/hin/master.m3u8?id=hin')">Hindi</button>
+    <button class="btn" onclick="changeVideo('https://jcevents.jiocinema.com/bpk-tv/JC_Sports18_1HD/JCHLS/hdntl=exp=1739428832~acl=%2f*~id=1acd007748ec1f80292d0a7d5e128f5f~data=hdntl~hmac=697723bf7c0cdc7361bcdc9d218bf7d0d59d2c388cca7a9cacc98f1328668d0b/index.m3u8')">Play Sport 18 Hindi</button>
+    <button class="btn" onclick="changeVideo('https://liv-cdn.pstvlive.xyz/wpl/tel/master.m3u8?id=tel')">Telugu</button>
+  </div>
+
+  <div id="disqus_thread"></div>
+
+  <div class="telegram-strip">
+    📢 Join our Telegram for Live Updates!
+    <a href="https://t.me/+bdfr3H7NBwwyZDZl" target="_blank">Join Now</a>
+  </div>
+
+  <div id="sfckyp3jnx1qam3tx636zypzy9ttutfdtfs"></div>
+  <script type="text/javascript" src="https://counter6.optistats.ovh/private/counter.js?c=kyp3jnx1qam3tx636zypzy9ttutfdtfs&down=async" async></script>
+  <noscript>
+    <a href="https://www.freecounterstat.com" title="website counter">
+      <img src="https://counter6.optistats.ovh/private/freecounterstat.php?c=kyp3jnx1qam3tx636zypzy9ttutfdtfs" border="0" title="website counter" alt="website counter">
+    </a>
+  </noscript>
+</body>
+</html>
+<!--DOCTYPE html>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IPL 2025 Popup</title>
@@ -445,7 +549,7 @@ document.addEventListener("DOMContentLoaded", function () {
   </div>
 
 </body>
-</html>--><!DOCTYPE html>
+</html>--><!--DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
