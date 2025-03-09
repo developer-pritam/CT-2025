@@ -3,6 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Video Player</title>
+    <script src="//content.jwplatform.com/libraries/SAHhwvZq.js"></script>
+    <style>
+        /* Modern UI Styling */
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #141e30, #243b55);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+            border-radius: 15px;
+            background: rgba(255, 255, 255, 0.1);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .video-container {
+            width: 80vw;
+            max-width: 800px;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-bottom: 20px;
+            box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.2);
+        }
+
+        #jwplayerDiv {
+            width: 100%;
+            height: 45vw;
+            max-height: 450px;
+        }
+
+        .join-btn {
+            background: #ff6f61;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 12px 25px;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: 0.3s;
+            display: inline-block;
+            box-shadow: 0px 5px 15px rgba(255, 111, 97, 0.4);
+        }
+
+        .join-btn:hover {
+            background: #d4554a;
+            box-shadow: 0px 5px 20px rgba(255, 111, 97, 0.6);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Enjoy Premium Streaming</h1>
+        <p>Join our Telegram for the latest updates!</p>
+        <div class="video-container">
+            <div id="jwplayerDiv"></div>
+        </div>
+        <a href="https://t.me/+nJCypsY4VzlkZjdl" class="join-btn">Join Telegram</a>
+    </div>
+
+    <script>
+        // JW Player Setup
+        jwplayer("jwplayerDiv").setup({
+            file: "https://a170aivottlinear-a.akamaihd.net/OTTB/sin-nitro/live/clients/dash/enc/tsrm0zirxz/out/v1/190f1d69a3d5467f8fb7d9df4339bc49/cenc.mpd", 
+            autostart: true,
+            width: "100%",
+            height: "100%",
+            stretching: "uniform",
+            type: "dash",
+            drm: {
+                clearkey: {
+                    keyId: "9cb6b6283487afe392adcffebf3cd6be",
+                    key: "05f4eb67381e0c173954603518ce84c3"
+                }
+            }
+        });
+    </script>
+</body>
+</html>
+<!--DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dynamic URL to Iframe</title>
     <style>
         body, html {
