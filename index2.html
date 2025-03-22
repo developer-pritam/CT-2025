@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script
+      type="text/javascript"
+      src="//egoismillogicaldegradation.com/67/17/7d/67177de28ea4c16f1465b59a62d4e503.js"></script>
+
+    <!-- External Libraries -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <style>
+      /* General Styling */
+      body {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        background-color: #000;
+        font-family: 'Helvetica Neue', Arial, sans-serif;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: relative;
+      }
+
+      .header {
+        background-color: #000;
+        color: #fff;
+        padding: 10px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 2px solid #333;
+      }
+
+      .menu-bar {
+        display: flex;
+        align-items: center;
+      }
+
+      .menu-bar a {
+        color: #fff;
+        font-size: 1.5rem;
+        text-decoration: none;
+        transition: color 0.3s ease;
+      }
+
+      .menu-bar a:hover {
+        color: #fe2c55;
+      }
+
+      .menu-bar i {
+        font-size: 1.5rem;
+      }
+
+      .header-text {
+        font-size: 1.2rem;
+        font-weight: bold;
+        text-align: center;
+        flex-grow: 1;
+      }
+
+      #iframe-container {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        position: relative;
+      }
+
+      #iframe-container iframe {
+        width: 100%;
+        height: 100%;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7);
+      }
+
+      /* Embed Code Box */
+      #copy-box {
+        width: 100%;
+        padding: 16px;
+        background-color: #1d1d1d;
+        border-radius: 12px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 10px 0;
+        border: 1px solid #333;
+      }
+
+      #iframe-code {
+        width: 75%;
+        padding: 12px;
+        font-size: 14px;
+        border: none;
+        background-color: #1d1d1d;
+        color: #fff;
+        border-radius: 8px;
+        text-overflow: ellipsis;
+        font-family: monospace;
+      }
+
+      #copy-btn {
+        padding: 10px 20px;
+        background: linear-gradient(90deg, #fe2c55, #ff426e);
+        color: #fff;
+        border: none;
+        border-radius: 25px;
+        cursor: pointer;
+        font-size: 14px;
+        font-weight: bold;
+        transition: background-color 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      #copy-btn:hover {
+        box-shadow: 0 4px 15px rgba(255, 66, 110, 0.6);
+      }
+
+      /* Footer */
+      .footer {
+        background-color: #1d1d1d;
+        color: #888;
+        padding: 20px;
+        text-align: center;
+        font-size: 14px;
+        border-top: 2px solid #333;
+      }
+
+      /* Loading Animation */
+      #loading-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 9999;
+        color: #fff;
+        font-size: 1rem;
+        text-align: center;
+        flex-direction: column;
+      }
+
+      .loading-text {
+        font-size: 1rem;
+        margin-top: 10px;
+      }
+
+      .spinner {
+        border: 4px solid rgba(0, 0, 0, 0.1);
+        border-left: 4px solid #fe2c55;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        animation: spin 1s linear infinite;
+      }
+
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+
+      /* Responsive Design */
+      @media (max-width: 768px) {
+        .header {
+          padding: 10px;
+          font-size: 1rem;
+        }
+
+        .menu-bar a {
+          font-size: 1.2rem;
+        }
+
+        .header-text {
+          font-size: 1rem;
+          text-align: center;
+        }
+
+        #copy-box {
+          flex-direction: column;
+        }
+
+        #iframe-code {
+          width: 100%;
+          margin-bottom: 10px;
+        }
+
+        #copy-btn {
+          width: 100%;
+        }
+
+        #iframe-container {
+          height: 60vh;
+        }
+      }
+
+      @media (max-width: 576px) {
+        .header {
+          font-size: 0.9rem;
+        }
+
+        .menu-bar a {
+          font-size: 1rem;
+        }
+
+        .header-text {
+          font-size: 0.9rem;
+        }
+
+        #iframe-container {
+          height: 65vh;
+        }
+
+        .footer {
+          font-size: 12px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Loading Overlay -->
+    <!-- <div id="loading-overlay">
+        <div class="spinner"> </div>
+        <div class="loading-text">Loading, please wait...</div>
+    </div>-->
+
+    <!-- Header -->
+
+    <center>
+      <script src="https://mafiatv.live/script.js?1"></script>
+    </center>
+
+    <!-- Iframe Container -->
+    <div id="iframe-container">
+      <iframe
+        src="https://mafiatv.live/tv.php?stream=STARSPORTS1&server=1"
+        allowfullscreen></iframe>
+    </div>
+
+    <center>
+      <script
+        type="text/javascript"
+        src="//egoismillogicaldegradation.com/67/17/7d/67177de28ea4c16f1465b59a62d4e503.js"></script>
+    </center>
+
+    <!-- Embed Code Box -->
+    <!--div id="copy-box">
+        <input type="text" id="iframe-code" value='<iframe src="STARSPORTS1" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>' readonly>
+        <button id="copy-btn">Copy Embed Code</button>
+    </div-->
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        // Hide loading overlay after the page is fully loaded
+        var loadingOverlay = document.getElementById('loading-overlay');
+        window.addEventListener('load', function () {
+          loadingOverlay.style.display = 'none';
+        });
+
+        // Copy button functionality
+        document
+          .getElementById('copy-btn')
+          .addEventListener('click', function () {
+            var codeInput = document.getElementById('iframe-code');
+            codeInput.select();
+            document.execCommand('copy');
+            alert('Embed code copied to clipboard!');
+          });
+      });
+    </script>
+
+    <script
+      type="text/javascript"
+      src="//egoismillogicaldegradation.com/67/17/7d/67177de28ea4c16f1465b59a62d4e503.js"></script>
+  </body>
+
+  <!-- Histats.com  START  (aync)-->
+  <script type="text/javascript">
+    var _Hasync = _Hasync || [];
+    _Hasync.push(['Histats.start', '1,4929617,4,0,0,0,00010000']);
+    _Hasync.push(['Histats.fasi', '1']);
+    _Hasync.push(['Histats.track_hits', '']);
+    (function () {
+      var hs = document.createElement('script');
+      hs.type = 'text/javascript';
+      hs.async = true;
+      hs.src = '//s10.histats.com/js15_as.js';
+      (
+        document.getElementsByTagName('head')[0] ||
+        document.getElementsByTagName('body')[0]
+      ).appendChild(hs);
+    })();
+  </script>
+  <noscript
+    ><a href="/" target="_blank"
+      ><img
+        src="//sstatic1.histats.com/0.gif?4929617&101"
+        alt=""
+        border="0" /></a
+  ></noscript>
+  <!-- Histats.com  END  -->
+</html>
